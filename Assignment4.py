@@ -2,6 +2,12 @@
 # Harpreet Kaur, Harman
 
 # Question 1
+from datetime import date
+
+today = date.today()
+currentDate = today.strftime("%d/%m/%Y")
+
+
 class Rates:
     def __init__(self, firstName, lastName, yearOfBirth, currentYear):
         self.__firstName = firstName
@@ -38,11 +44,9 @@ class Rates:
 
     def calculatesPersonMaximumHeartRate(self):
         return 220 - self.calculatesPersonAge()
-        # return MaxHeartRate
 
     def calculatesPersonMaxMinTargetHeartRate(self):
-        return self.calculatesPersonMaximumHeartRate * 85 / 100
-        # , self.calculatesPersonMaximumHeartRate * 50 / 100
+        return self.calculatesPersonMaximumHeartRate() * 85 / 100, self.calculatesPersonMaximumHeartRate() * 50 / 100
 
 
 class Profile:
@@ -104,18 +108,20 @@ class Profile:
     def get_Height(self):
         return self.__Height
 
-    # def calculatesPersonAge(self):
-    #     return self.__currentYear - self.__yearOfBirth
+    def calculatesPersonAge(self):
+        todayDate = date.today()
+        age = todayDate.year - self.__birthYear - (
+                    (todayDate.month, todayDate.day) < (self.__birthMonth, self.__birthDay))
+        return age
 
-    # def calculatesPersonMaximumHeartRate(self):
-    #     return 220 - self.calculatesPersonAge()
-    #     # return MaxHeartRate
-    #
-    # def calculatesPersonMaxMinTargetHeartRate(self):
-    #     return self.calculatesPersonMaximumHeartRate * 85 / 100
+    def calculatesPersonMaximumHeartRate(self):
+        return 220 - self.calculatesPersonAge()
+
+    def calculatesPersonMaxMinTargetHeartRate(self):
+        return self.calculatesPersonMaximumHeartRate() * 85 / 100, self.calculatesPersonMaximumHeartRate() * 50 / 100
 
     def calculatesIBM(self):
-        return self.Weight / (self.height * self.height)
+        return self.__Weight / self.__Height * self.__Height
 
 
 def main():
@@ -129,19 +135,22 @@ def main():
 
     ageY = objRate.calculatesPersonAge()
     mHR = objRate.calculatesPersonMaximumHeartRate()
-    maxMinTR = objRate.calculatesPersonMaxMinTargetHeartRate
+    maxTR, minTR = objRate.calculatesPersonMaxMinTargetHeartRate()
 
     print(
-        "Person First Name: " + "'" + str(objRate.get_firstName()) + "'" + "Last Name: " + "'" + str(
-            objRate.get_lastName()) + "'" + "Year of "
+        "Person First Name: " + "'" + str(objRate.get_firstName()) + "'" + "  Last Name: " + "'" + str(
+            objRate.get_lastName()) + "'" + "  Year of "
                                             "Birth: "
-        + "'" + str(objRate.get_yearOfBirth()))
+        + "'" + str(objRate.get_yearOfBirth()) + "'")
 
     print("Person's age in years: " + str(ageY))
-    print("Person's Maximum Hear Rate: " + str(mHR))
-    print("Person's target-heart-rate range.: " + str(maxMinTR))
+    print("Person's Maximum Heart Rate: " + str(mHR))
+    print("Person's target-heart-rate range(Max to Min): " + str(maxTR) + " - " + str(minTR))
+    print("\n")
 
     # Calling of Question 2 Class methods
+    print("\n")
+    print("\n")
     fName = str(input("Please User First Name: "))
     lName = str(input("Please User Last Name: "))
     gender = str(input("Please Gender: "))
@@ -153,24 +162,23 @@ def main():
 
     objProfile = Profile(fName, lName, gender, yBirth, mBirth, dBirth, weight, height)
 
-    # ageY1 = objProfile.calculatesPersonAge()
-    # mHR1 = objProfile.calculatesPersonMaximumHeartRate()
-    # maxMinTR1 = objProfile.calculatesPersonMaxMinTargetHeartRate
-    BMIval = objProfile.calculatesIBM()
+    ageInYear = objProfile.calculatesPersonAge()
+    mHR1 = objProfile.calculatesPersonMaximumHeartRate()
+    maxTR1, minTR1 = objProfile.calculatesPersonMaxMinTargetHeartRate()
 
     print(
         "Person First Name: " + "'" + str(objProfile.get_firstName()) + "'" + " Last Name: " + "'" + str(
-            objProfile.get_lastName()) + "'" + " Gender"
+            objProfile.get_lastName()) + "'" + " Gender: "
         + "'" + str(
-            objProfile.get_gender()) + " Date of Birth: " + str(objProfile.get_birthYear()) + "-" + str(
-            objProfile.get_birthMonth()) + "-" + str(objProfile.get_birthDay()) + " Weight: " + str(
-            objProfile.get_Weight()) + " Height: " + str(objProfile.get_Height()))
+            objProfile.get_gender())+"'" + " Date of Birth: " +"'"+str(objProfile.get_birthYear()) + "-" + str(
+            objProfile.get_birthMonth()) + "-" + str(objProfile.get_birthDay())+"'" + " Weight: " +"'"+str(
+            objProfile.get_Weight())+"'" + " Height: " + "'"+str(objProfile.get_Height())+"'")
 
-    print("Person BMI: " + str(BMIval))
+    print("Person BMI: " + str(objProfile.calculatesIBM()))
 
-    # print("Person's age in years: " + str(ageY1))
-    # print("Person's Maximum Hear Rate: " + str(mHR1))
-    # print("Person's target-heart-rate range.: " + str(maxMinTR1))
+    print("Person's age in years: " + str(ageInYear))
+    print("Person's Maximum Heart Rate: " + str(mHR1))
+    print("Person's target-heart-rate range(Max to Min).: " + str(maxTR1)+" - "+str(minTR1))
 
 
 main()
