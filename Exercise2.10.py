@@ -28,8 +28,7 @@ flour = (cookies * FLOUR_RECIPE) / COOKIES_RECIPE
 
 # Print the amount of butter, sugar, and flour needed
 # to make the specified number of cookies.
-print ("To make", cookies, "cookies, you will need:")
-print (format(sugar, '.2f'), "cups of sugar")
-print (format(butter, '.2f'), "cups of butter")
-print (format(flour, '.2f'), "cups of flour")
-
+print("To make", cookies, "cookies, you will need:")
+print(format(sugar, '.2f'), "cups of sugar")
+print(format(butter, '.2f'), "cups of butter")
+print(format(flour, '.2f'), "cups of flour")

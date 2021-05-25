@@ -2,7 +2,7 @@
 
 def main():
     # Receive user input
-    full_name = input ('Enter your full name: ')
+    full_name = input('Enter your full name: ')
 
     # Split according to spaces
     name = full_name.split()
@@ -12,6 +12,6 @@ def main():
         print(string[0].upper(), sep='', end='')
         print('.', sep=' ', end='')
 
+
 # Call the main function.
 main()
-

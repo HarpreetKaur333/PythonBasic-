@@ -16,8 +16,4 @@ gallons = float(input("Enter the gallons of fuel used: "))
 mpg = miles / gallons
 
 # Print the result.
-print ("You used", format(mpg, '.2f'), "miles per gallon.")
-
-
-
-
+print("You used", format(mpg, '.2f'), "miles per gallon.")

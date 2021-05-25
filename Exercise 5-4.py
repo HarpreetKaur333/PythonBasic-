@@ -29,10 +29,11 @@ def main():
     # Get the amount for maintenance.
     maintenance = float(input('Enter the monthly maintenance' \
                               ' amount: '))
-        
+
     # Print information about the vehicle.
     showExpenses(loan, insurance, gas, oil, \
                  tires, maintenance)
+
 
 # The showExpenses function accepts loan, insurance,
 # gas, oil, tires, and maintenance information as
@@ -48,12 +49,13 @@ def showExpenses(loan, insure, gas, oil, \
     totalYear = totalMonth * 12
 
     # Print monthly and annual information.
-    print ('Total monthly expense: $', \
-           format(totalMonth, ',.2f'), \
-           sep='')
-    print ('Total annual expense: $', \
-           format(totalYear, ',.2f'), \
-           sep='')
+    print('Total monthly expense: $', \
+          format(totalMonth, ',.2f'), \
+          sep='')
+    print('Total annual expense: $', \
+          format(totalYear, ',.2f'), \
+          sep='')
+
 
 # Call the main function.
 main()

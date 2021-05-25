@@ -23,10 +23,6 @@ tax = food * TAX_RATE
 total = food + tip + tax
 
 # Print the tip, tax, and total.
-print ("Tip: $", format(tip, '.2f'))
-print ("Tax: $", format(tax, '.2f'))
-print ("Total: $", format(total, '.2f'))
-
-
-
-
+print("Tip: $", format(tip, '.2f'))
+print("Tax: $", format(tax, '.2f'))
+print("Total: $", format(total, '.2f'))

@@ -7,10 +7,9 @@ RISE_PER_YEAR = 1.8
 rise = 0.0
 
 # Calculate and print value for the rise each year.
-print ('Year\t\tRise (in millimeters)')
-print ('------------------------------------------')
+print('Year\t\tRise (in millimeters)')
+print('------------------------------------------')
 
 for year in range(25):
     rise += RISE_PER_YEAR
-    print ((year + 1), '\t\t', format(rise, '.2f'))
-
+    print((year + 1), '\t\t', format(rise, '.2f'))

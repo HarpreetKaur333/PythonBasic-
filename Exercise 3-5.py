@@ -16,17 +16,10 @@ mass = float(input("Enter the object's mass in kilograms: "))
 weight = mass * MASS_MULTIPLIER
 
 # Display weight evaluation
-print ('Object Weight: ', format(weight, '.2f'))
+print('Object Weight: ', format(weight, '.2f'))
 if weight > TOO_HEAVY:
-    print ('The object is too heavy. It weighs more than',
-           TOO_HEAVY, 'Newtons.')
-elif  weight < TOO_LIGHT:
-    print ('The object is too light. It weighs less than',
-           TOO_LIGHT, 'Newtons.')
-
-
-
-
-
-
-
+    print('The object is too heavy. It weighs more than',
+          TOO_HEAVY, 'Newtons.')
+elif weight < TOO_LIGHT:
+    print('The object is too light. It weighs less than',
+          TOO_LIGHT, 'Newtons.')

@@ -11,17 +11,12 @@ elif day == 2:
 elif day == 3:
     print('Wednesday')
 elif day == 4:
-    print ('Thursday')
+    print('Thursday')
 elif day == 5:
-    print ('Friday')
+    print('Friday')
 elif day == 6:
-    print ('Saturday')
+    print('Saturday')
 elif day == 7:
-    print ('Sunday')
+    print('Sunday')
 else:
-    print ('Error: Please enter a number in the range 1-7.')
-
-
-
-
-
+    print('Error: Please enter a number in the range 1-7.')

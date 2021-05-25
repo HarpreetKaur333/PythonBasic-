@@ -126,6 +126,7 @@ class Profile:
 
 def main():
     # Calling of Question 1 class methods
+    print("Question 1")
     fName = str(input("Please User First Name: "))
     lName = str(input("Please User Last Name: "))
     yBirth = int(input("Please year of birth: "))
@@ -150,6 +151,8 @@ def main():
 
     # Calling of Question 2 Class methods
     print("\n")
+    print("\n")
+    print("Question 2")
     print("\n")
     fName = str(input("Please User First Name: "))
     lName = str(input("Please User Last Name: "))

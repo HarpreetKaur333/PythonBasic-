@@ -27,12 +27,8 @@ totalTax = stateTax + countyTax
 totalSale = purchase + totalTax
 
 # Print information about the sale.
-print ("Purchase Amount:", format(purchase, '.2f'))
-print ("State Tax:", format(stateTax, '.2f'))
-print ("County Tax:", format(countyTax, '.2f'))
-print ("Total Tax:", format(totalTax, '.2f'))
-print ("Sale Total:", format(totalSale, '.2f'))
-
-
-
-
+print("Purchase Amount:", format(purchase, '.2f'))
+print("State Tax:", format(stateTax, '.2f'))
+print("County Tax:", format(countyTax, '.2f'))
+print("Total Tax:", format(totalTax, '.2f'))
+print("Sale Total:", format(totalSale, '.2f'))

@@ -5,6 +5,7 @@ FEET_PER_GALLON = 112
 LABOR_HOURS = 8
 LABOR_CHARGE = 35
 
+
 # main module
 def main():
     # Local variables
@@ -20,7 +21,7 @@ def main():
 
     # Get paint price
     pricePaint = float(input('Enter paint price per gallon: '))
-        
+
     # Calculate gallons of paint
     gallonPaint = int(feetWall / FEET_PER_GALLON) + 1
 
@@ -36,6 +37,7 @@ def main():
     # Print cost estimate
     showCostEstimate(gallonPaint, hourLabor, costPaint, costLabor)
 
+
 # The showCostEstimate function accepts gallonPaint, hourLabor,
 # costPaint, costLabor as arguments and displays the corresponding
 # data.
@@ -47,14 +49,15 @@ def showCostEstimate(gallonPaint, hourLabor, costPaint, costLabor):
     totalCost = costPaint + costLabor
 
     # Display results
-    print ('Gallons of paint: ', gallonPaint)
-    print ('Hours of labor: ', hourLabor)
-    print ('Paint charges: $' , \
-           format(costPaint, ',.2f'), sep='')
-    print ('Labor charges: $' , \
-           format(costLabor, ',.2f'), sep='')
-    print ('Total cost: $' , \
-           format(totalCost, ',.2f'), sep='')
+    print('Gallons of paint: ', gallonPaint)
+    print('Hours of labor: ', hourLabor)
+    print('Paint charges: $', \
+          format(costPaint, ',.2f'), sep='')
+    print('Labor charges: $', \
+          format(costLabor, ',.2f'), sep='')
+    print('Total cost: $', \
+          format(totalCost, ',.2f'), sep='')
+
 
 # Call the main function.
 main()

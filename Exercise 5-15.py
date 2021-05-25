@@ -20,7 +20,7 @@ def main():
     # Calculate average grade
     average = calc_average(score1, score2, score3, score4, score5)
 
-    #Display grade and average information in tabular form
+    # Display grade and average information in tabular form
     print('score\t\tnumeric grade\tletter grade')
     print('----------------------------------------------------')
     print('score 1:\t', score1, '\t\t', determine_grade(score1))
@@ -29,14 +29,16 @@ def main():
     print('score 4:\t', score4, '\t\t', determine_grade(score4))
     print('score 5:\t', score5, '\t\t', determine_grade(score5))
     print('----------------------------------------------------')
-    print ('Average score:\t', average, '\t\t', \
-           determine_grade(average))
+    print('Average score:\t', average, '\t\t', \
+          determine_grade(average))
 
-# The calc_average function returns average of 5 grades 
+
+# The calc_average function returns average of 5 grades
 def calc_average(s1, s2, s3, s4, s5):
-    return  (s1 + s2 + s3 + s4 + s5) / 5.0
+    return (s1 + s2 + s3 + s4 + s5) / 5.0
 
-# The determine_grade function receives a numeric  
+
+# The determine_grade function receives a numeric
 # grade and returns the corresponding letter grade 
 def determine_grade(score):
     if score >= 90:
@@ -50,7 +52,6 @@ def determine_grade(score):
     else:
         return 'F'
 
+
 # Call the main function.
 main()
-
-

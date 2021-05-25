@@ -5,30 +5,24 @@ number = int(input('Enter an integer from 1 - 10: '))
 
 # Print Roman numeral
 if number == 1:
-    print ('I')
+    print('I')
 elif number == 2:
-    print ('II')
+    print('II')
 elif number == 3:
-    print ('III')
+    print('III')
 elif number == 4:
-    print ('IV')
+    print('IV')
 elif number == 5:
-    print ('V')
+    print('V')
 elif number == 6:
-    print ('VI')
+    print('VI')
 elif number == 7:
-    print ('VII')
+    print('VII')
 elif number == 8:
-    print ('VIII')
+    print('VIII')
 elif number == 9:
-    print ('IX')
+    print('IX')
 elif number == 10:
-    print ('X')
+    print('X')
 else:
-    print ('Error: Invalid Number')
-
-
-
-
-
-
+    print('Error: Invalid Number')

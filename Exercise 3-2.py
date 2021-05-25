@@ -27,11 +27,11 @@ areaA = lengthA * widthA
 areaB = lengthB * widthB
 
 # Print area comparison
-print ('Area A:', format(areaA, '.2f'))
-print ('Area B:', format(areaB, '.2f'))
-if  areaA > areaB:
-    print ('Area A is greater than Area B.')
-elif  areaA < areaB:
-    print ('Area B is greater than Area A.')
+print('Area A:', format(areaA, '.2f'))
+print('Area B:', format(areaB, '.2f'))
+if areaA > areaB:
+    print('Area A is greater than Area B.')
+elif areaA < areaB:
+    print('Area B is greater than Area A.')
 else:
-    print ('Area A is equal to Area B.')
+    print('Area A is equal to Area B.')

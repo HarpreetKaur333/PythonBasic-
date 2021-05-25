@@ -14,8 +14,4 @@ tractSize = input("Enter the number of square feet in the tract.")
 acres = float(tractSize) / SQ_FEET_PER_ACRE
 
 # Print the number of acres.
-print ("The size of that tract is", format(acres, '.2f'), "acres.")
-
-
-
-
+print("The size of that tract is", format(acres, '.2f'), "acres.")

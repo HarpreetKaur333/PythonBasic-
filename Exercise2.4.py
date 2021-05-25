@@ -31,10 +31,6 @@ tax = subtotal * TAX_RATE
 total = subtotal + tax
 
 # Print the values.
-print ("Subtotal: ", format(subtotal, '.2f'))
-print ("Sales Tax: ", format(tax, '.2f'))
-print ("Total: ", format(total, '.2f'))
-
-
-
-
+print("Subtotal: ", format(subtotal, '.2f'))
+print("Sales Tax: ", format(tax, '.2f'))
+print("Total: ", format(total, '.2f'))

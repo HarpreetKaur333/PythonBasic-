@@ -15,11 +15,7 @@ distance10Hours = SPEED * 10
 distance15Hours = SPEED * 15
 
 # Print the results.
-print ("The car will travel the following distances:")
-print (distance6Hours,"miles in 6 hours.")
-print (distance10Hours,"miles in 10 hours.")
-print (distance15Hours,"miles in 15 hours.")
-
-
-
-
+print("The car will travel the following distances:")
+print(distance6Hours, "miles in 6 hours.")
+print(distance10Hours, "miles in 10 hours.")
+print(distance15Hours, "miles in 15 hours.")

@@ -2,6 +2,7 @@
 
 import random
 
+
 def main():
     # Initialize list of numbers.
     number_list = [0, 0, 0, 0, 0, 0, 0]
@@ -12,12 +13,12 @@ def main():
 
     # Display numbers in a single line.
     for i in range(7):
-        print (number_list[i], end='')
-        
+        print(number_list[i], end='')
+
         # Separate current number from next number.
         if i < 6:
             print(', ', end='')
 
+
 # Call the main function.
 main()
-

@@ -29,18 +29,18 @@ else:
     if color1 == RED:
         if color2 == BLUE:
             print('purple')
-        else: # Color 2 must be yellow
+        else:  # Color 2 must be yellow
             print('orange')
 
     # Determine secondary color if first color is blue.
     elif color1 == BLUE:
         if color2 == RED:
             print('purple')
-        else: # Color 2 must be yellow.
+        else:  # Color 2 must be yellow.
             print('green')
 
-    else: # First color must be yellow.
+    else:  # First color must be yellow.
         if color2 == RED:
             print('orange')
-        else: # Color 2 must be blue.
+        else:  # Color 2 must be blue.
             print('green')

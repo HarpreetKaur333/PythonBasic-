@@ -4,6 +4,7 @@
 STATE_TAX_RATE = 0.05
 COUNTY_TAX_RATE = 0.025
 
+
 # maindef
 def main():
     # Local variables
@@ -13,7 +14,7 @@ def main():
 
     # Get the amount of the purchase
     purchase = float(input('Enter the purchase amount: '))
-    
+
     # Calculate the state tax
     stateTax = purchase * STATE_TAX_RATE
 
@@ -23,21 +24,23 @@ def main():
     # Print information about the sale
     showSale(purchase, stateTax, countyTax)
 
+
 # The showSale function accepts purchase, stateTax,
 # countyTax as arguments and prints the equivalent
 # total sale information.
-def showSale (purchase, stateTax, countyTax):
-    #local variables
+def showSale(purchase, stateTax, countyTax):
+    # local variables
     totalTax = 0.0
     totalSale = 0.0
     totalTax = stateTax + countyTax
     totalSale = purchase + totalTax
-    
-    print ('Purchase amount:', format(purchase, '.2f'))
-    print ('State tax:', format(stateTax, '.2f'))
-    print ('County tax:', format(countyTax, '.2f'))
-    print ('Total tax:', format(totalTax, '.2f'))
-    print ('Sale total:', format(totalSale, '.2f'))
+
+    print('Purchase amount:', format(purchase, '.2f'))
+    print('State tax:', format(stateTax, '.2f'))
+    print('County tax:', format(countyTax, '.2f'))
+    print('Total tax:', format(totalTax, '.2f'))
+    print('Sale total:', format(totalSale, '.2f'))
+
 
 # Call the main function.
 main()

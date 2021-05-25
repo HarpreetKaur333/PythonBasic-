@@ -11,8 +11,4 @@ celsius = float(input("Enter a Celsius temperature: "))
 fahrenheit = (9.0 / 5.0) * celsius + 32
 
 # Display the Fahrenheit temperature.
-print ("That is equal to", format(fahrenheit, '.2f'), "degrees Fahrenheit.")
-
-
-
-
+print("That is equal to", format(fahrenheit, '.2f'), "degrees Fahrenheit.")

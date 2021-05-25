@@ -9,11 +9,10 @@ STARTING_AMOUNT = 8000.0
 tuition = STARTING_AMOUNT
 
 # Calculate and print amount of increase each year.
-print ('Year\t Projected Tuition (per Semester)')
-print ('------------------------------------------')
+print('Year\t Projected Tuition (per Semester)')
+print('------------------------------------------')
 
 for year in range(5):
     tuition += (tuition * INCREASE_PER_YEAR)
-    print ((year + 1), '\t', '$', \
-           format(tuition, '.2f'))
-
+    print((year + 1), '\t', '$', \
+          format(tuition, '.2f'))

@@ -26,11 +26,6 @@ else:
     # Display magic date evaluation
     print('The date is ', month, '/', day, '/', year)
     if (day * month) == year:
-        print ('This is a magic date.')
+        print('This is a magic date.')
     else:
-        print ('This is not a magic date.')
-
-
-
-
-
+        print('This is not a magic date.')

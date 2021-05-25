@@ -5,6 +5,7 @@ CLASS_A_SEATS = 20
 CLASS_B_SEATS = 15
 CLASS_C_SEATS = 10
 
+
 # main module
 def main():
     # Local variables
@@ -36,24 +37,26 @@ def main():
     # Print income
     showIncome(incomeAseats, incomeBseats, incomeCseats)
 
+
 # The showIncome function accepts the income from class
 # A, B, and C seats and displays the total income.
 def showIncome(incomeAseats, incomeBseats, incomeCseats):
     # Local variable
     totalIncome = 0.0
-    
+
     # Calculate total income
     totalIncome = incomeAseats + incomeBseats + incomeCseats
-    
+
     # Show results
-    print ("Income from class A seats: $", \
-           format(incomeAseats, '.2f'), sep='')
-    print ("Income from class B seats: $", \
-           format(incomeBseats, '.2f'), sep='')
-    print ("Income from class C seats: $", \
-           format(incomeCseats, '.2f'), sep='')
-    print ("Total income: $", \
-           format(totalIncome, '.2f'), sep='')
+    print("Income from class A seats: $", \
+          format(incomeAseats, '.2f'), sep='')
+    print("Income from class B seats: $", \
+          format(incomeBseats, '.2f'), sep='')
+    print("Income from class C seats: $", \
+          format(incomeCseats, '.2f'), sep='')
+    print("Total income: $", \
+          format(totalIncome, '.2f'), sep='')
+
 
 # Call the main function.
 main()

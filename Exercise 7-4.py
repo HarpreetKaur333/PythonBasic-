@@ -23,11 +23,11 @@ def main():
     total = sum(number_list)
     average = total / 20.0
 
-    print ('Low:', low)
-    print ('High:', high)
-    print ('Total:', format(total, ',.2f'))
-    print ('Average:', format(average, ',.2f'))
+    print('Low:', low)
+    print('High:', high)
+    print('Total:', format(total, ',.2f'))
+    print('Average:', format(average, ',.2f'))
+
 
 # Call the main function.
 main()
-

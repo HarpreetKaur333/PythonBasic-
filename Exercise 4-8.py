@@ -2,7 +2,7 @@
 
 # Declare variables for the number, and the
 # total.
-number = 1.0    # Initialize for while loop
+number = 1.0  # Initialize for while loop
 total = 0.0
 
 # Continue adding numbers while they are positive.
@@ -16,4 +16,4 @@ while number > 0:
         total = total + number
 
 # Display total.
-print ('Total =', format(total, '.2f')) 
+print('Total =', format(total, '.2f'))

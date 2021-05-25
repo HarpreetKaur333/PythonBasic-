@@ -18,6 +18,4 @@ else:
     shippingCost = 1.50
 
 # Display the shipping charge.
-print ('Shipping charge: $', format(shippingCost, '.2f'))
-
-
+print('Shipping charge: $', format(shippingCost, '.2f'))

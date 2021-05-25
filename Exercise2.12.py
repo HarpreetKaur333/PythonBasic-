@@ -9,11 +9,11 @@ SELLING_PRICE = 42.75
 # Variables
 amountPaidForStock = 0.0  # Amount paid for the stock
 purchaseCommission = 0.0  # Commission paid to purchase stock
-totalPaid = 0.0           # Total amount paid
-stockSoldFor = 0.0        # Amount stock sold for
-sellingCommission = 0.0   # Commission paid to sell stock
-totalReceived = 0.0       # Total amount received
-profitOrLoss = 0.0        # Amount of profit or loss
+totalPaid = 0.0  # Total amount paid
+stockSoldFor = 0.0  # Amount stock sold for
+sellingCommission = 0.0  # Commission paid to sell stock
+totalReceived = 0.0  # Total amount received
+profitOrLoss = 0.0  # Amount of profit or loss
 
 # Calculate the amount that Joe paid for the stock, not
 # including the commission.
@@ -44,12 +44,8 @@ totalReceived = stockSoldFor - sellingCommission
 profitOrLoss = totalReceived - totalPaid
 
 # Print the required data.
-print ("Amount paid for the stock: $", format(amountPaidForStock, '.2f'))
-print ("Commission paid on the purchase: $", format(purchaseCommission, '.2f'))
-print ("Amount the stock sold for: $", format(stockSoldFor, '.2f'))
-print ("Commission paid on the sale: $", format(sellingCommission, '.2f'))
-print ("Profit (or loss if negative): $", format(profitOrLoss, '.2f'))
-
-
-
-
+print("Amount paid for the stock: $", format(amountPaidForStock, '.2f'))
+print("Commission paid on the purchase: $", format(purchaseCommission, '.2f'))
+print("Amount the stock sold for: $", format(stockSoldFor, '.2f'))
+print("Commission paid on the sale: $", format(sellingCommission, '.2f'))
+print("Profit (or loss if negative): $", format(profitOrLoss, '.2f'))
